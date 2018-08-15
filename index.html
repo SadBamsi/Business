@@ -4,38 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
   <title>Business</title>
 </head>
 <body>
     <header>
-				<div class="header">
-					<div class="logo">
-						<img src="img/logo.png" alt="logo of the company">
-					</div>
-							<ul class="header-menu">
-								<li class="header-menu-item"><a href="#">Home</a></li>
-								<li class="header-menu-item"><a href="#">Service</a></li>
-								<li class="header-menu-item"><a href="#">About us</a></li>
-								<li class="header-menu-item"><a href="#">Pricing table</a></li>
-								<li class="header-menu-item"><a href="#">How it work</a></li>
-								<li class="header-menu-item"><a href="#">Happy clients</a></li>
-								<li class="header-menu-item"><a href="#">Contact us</a></li>
-							</ul>
-				</div>
-		</header>
+    	<div class="wrap">
+    		<div class="header">
+    			<div class="header-logo">
+    				<img src="img/logo.png" alt="Logo of the company">
+    			</div>
+    			<div class="header-nav">
+    				<ul class="header-nav-menu">
+    					<li class="header-nav-menu-item"><a href="#home">Home</a></li>
+    					<li class="header-nav-menu-item"><a href="#">Service</a></li>
+    					<li class="header-nav-menu-item"><a href="#">About us</a></li>
+    					<li class="header-nav-menu-item"><a href="#">Pricing table</a></li>
+    					<li class="header-nav-menu-item"><a href="#">How it work</a></li>
+    					<li class="header-nav-menu-item"><a href="#">Happy clients</a></li>
+    					<li class="header-nav-menu-item"><a href="#">contact us</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </header>
 
 		<section id="home">
-			<h1 class="home-title">Boost up your Local business</h1>
-			<span class="home-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</span>
-			<form action="#" class="home-form">
-				<input type="text" class="name" placeholder="Full Name">
-				<input type="text" class="email" placeholder="Email Address">
-				<input type="text" class="number" placeholder="Phone Number">
-				<button></button>
-			</form>
+			<div class="wrap">
+				<h1 class="home-title">Boost up your Local business</h1>
+				<span class="home-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</span>
+
+				<form action="#" class="home-form">
+					<label class="form-label" for="client-name">
+						<i class="fa fa-user form-icon" aria-hidden="true"></i>
+						<input id="client-name" class="home-form-input" type="text" placeholder="Full Name">
+					</label>
+					<label class="form-label" for="client-email">
+						<i class="fa fa-envelope form-icon" aria-hidden="true"></i>
+						<input id="client-email" class="home-form-input" type="text" placeholder="Email Address">
+					</label>
+					<label class="form-label" for="client-number">
+						<i class="fa fa-phone form-icon" aria-hidden="true"></i>
+						<input id="client-number" class="home-form-input" type="text" placeholder="Phone Number">
+					</label>
+					<button class="home-form-btn">Request a quote</button>
+				</form>
+
+				<div class="home-slider-area">
+					<img src="img/notebook-min.png" alt="">
+					<div class="slider">
+						<input type="radio" name="slide-item" id="first-slide-btn" class="slide-item">
+						<label class="slide-label" for="first-slide-btn"></label>
+						<div class="slide-img first-slide">
+							<img src="img/first-slide-min.png" alt="first-slide">
+						</div>
+
+						<input type="radio" name="slide-item" id="second-slide-btn" class="slide-item">
+						<label class="slide-label" for="second-slide-btn"></label>
+						<div class="slide-img second-slide">
+							<img src="img/second-slide.png" alt="second slide">
+						</div>
+
+						<input type="radio" name="slide-item" id="third-slide-btn" class="slide-item">
+						<label class="slide-label" for="third-slide-btn"></label>
+						<div class="slide-img third-slide">
+							<img src="img/third-slide.png" alt="third-slide">
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+<!-------------- Service ----------------->
+		
+		<section id="services">
+			<div class="wrap">
+				<h2 class="services-title">Our Services</h2>
+				<span class="services-subtitle">Lorem Ipsum is simply dummy Business industry.</span>
+
+				<!---------- Service cart-------------->
+
+				<div class="services-area">
+
+					<div class="left-block">
+
+						<div class="services-cart">
+							<div class="services-cart-logo clock-icon">
+								<span><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i></span>
+								<div class="wrap-logo">
+									<i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="services-cart-text-area">
+								<h2 class="services-cart-title">Font-Awesome Icons</h2>
+								<span class="services-cart-subtitle">
+									Lorem Ipsum is simply dummy text of the printing and typesetting ind
+									ustry. Lorem Ipsum has been the industry's standard dummy text ever 
+									since the 1500s, when an unknown printer.
+								</span>
+							</div>
+						</div>
+
+						<div class="services-cart">
+							<div class="services-cart-logo">
+								<span><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i></span>
+							</div>
+							<div class="services-cart-text-area">
+								<h2 class="services-cart-title">Working Contact form</h2>
+								<span class="services-cart-subtitle">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will un
+								cover many web sites still in their infancy</span>
+							</div>
+						</div>
+
+						<div class="services-cart">
+							<div class="services-cart-logo">
+								<span><i class="fa fa-renren fa-fw" aria-hidden="true"></i></span>
+							</div>
+							<div class="services-cart-text-area">
+								<h2 class="services-cart-title">Friendly Code</h2>
+								<span class="services-cart-subtitle">Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
+								exact original form, accompanied by English versions from the 1914 translation by H. Rackham</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="right-block">
+						<div class="services-cart">
+							<div class="services-cart-logo">
+								<span><i class="fa fa-cog fa-fw" aria-hidden="true"></i></span>
+							</div>
+							<div class="services-cart-text-area">
+								<h2 class="services-cart-title">Fully Responsive Design</h2>
+								<span class="services-cart-subtitle">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy</span>
+							</div>
+						</div>
+
+						<div class="services-cart">
+							<div class="services-cart-logo">
+								<span><i class="fa fa-rocket fa-fw" aria-hidden="true"></i></span>
+							</div>
+							<div class="services-cart-text-area">
+								<h2 class="services-cart-title">Retina Ready icons here</h2>
+								<span class="services-cart-subtitle">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+								or randomised words which don't look even slightly believable.</span>
+							</div>
+						</div>
+
+						<div class="services-cart">
+							<div class="services-cart-logo">
+								<span><i class="fa fa-usd fa-fw" aria-hidden="true"></i></span>
+							</div>
+							<div class="services-cart-text-area">
+								<h2 class="services-cart-title">Flat trendy landing page Design</h2>
+								<span class="services-cart-subtitle">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 
+									the 1500s, when an unknown printer.
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</section>
 </body>
+
+
+
 </html>
