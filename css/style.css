@@ -98,6 +98,7 @@ html
     box-sizing: border-box;
 }
 
+
 /******Header*********/
 
 .header {
@@ -255,23 +256,38 @@ html
 #services {
 	margin-top: 80px;
 	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 }
+.left-block {
+	flex: 1;
+	margin-right: 106px;	
+}
+.right-block {
+	flex: 1;
+}
+
 .services-title {
 	font-family: 'Gotham Pro';
 	color: #394b50;
 	font-size: 30px;
 	font-weight: 900;
+	line-height: 22px;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 5px;
 }
 .services-subtitle {
+	display: inline-block;
 	color: #394b50;
 	font-size: 16px;
 	font-weight: 400;
-	text-align: center;
 }
 
-/******Service cart*****/
 
 .services-area {
 	margin-top: 93px;
@@ -280,6 +296,7 @@ html
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content:;
 }
 .services-cart {
 	display: -webkit-flex;
@@ -287,35 +304,76 @@ html
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin-bottom: 125px;
+	justify-content: space-between;
+	/*margin-bottom: 125px;*/
 }
 .services-cart-logo {
-	margin-right: 38px;
+	margin-bottom: 125px;
 }
 .services-cart-logo span {
 	font-size: 50px; 
 	font-weight: 400;
 	line-height: 22px;
-	color: #79a4ce;
-	-ms-text-align-last: auto;
-	text-align-last: auto;
+	color: #fff;
+	text-shadow: 
+		-0   -2px 0   #79A4CE,
+		 0   -2px 0   #79A4CE,
+		-0    2px 0   #79A4CE,
+		 0    2px 0   #79A4CE,
+		-2px -0   0   #79A4CE,
+		 2px -0   0   #79A4CE,
+		-2px  0   0   #79A4CE,
+		 2px  0   0   #79A4CE,
+		-1px -2px 0   #79A4CE,
+		 1px -2px 0   #79A4CE,
+		-1px  2px 0   #79A4CE,
+		 1px  2px 0   #79A4CE,
+		-2px -1px 0   #79A4CE,
+		 2px -1px 0   #79A4CE,
+		-2px  1px 0   #79A4CE,
+		 2px  1px 0   #79A4CE,
+		-2px -2px 0   #79A4CE,
+		 2px -2px 0   #79A4CE,
+		-2px  2px 0   #79A4CE,
+		 2px  2px 0   #79A4CE,
+		-2px -2px 0   #79A4CE,
+		 2px -2px 0   #79A4CE,
+		-2px  2px 0   #79A4CE,
+		 2px  2px 0   #79A4CE;
 }
 .services-cart-logo.clock-icon span {
-	color: #f67828;
-}
-.clock-icon {
-	position: relative;
-}
-.wrap-logo i {
-	position: absolute;
-	top: 0;
-	left: 0;
-	font-size: 50px;
-	font-weight: 100;
 	color: #fff;
+	font-size: 50px;
+	text-shadow: 
+		-0   -2px 0   #F67828,
+		 0   -2px 0   #F67828,
+		-0    2px 0   #F67828,
+		 0    2px 0   #F67828,
+		-2px -0   0   #F67828,
+		 2px -0   0   #F67828,
+		-2px  0   0   #F67828,
+		 2px  0   0   #F67828,
+		-1px -2px 0   #F67828,
+		 1px -2px 0   #F67828,
+		-1px  2px 0   #F67828,
+		 1px  2px 0   #F67828,
+		-2px -1px 0   #F67828,
+		 2px -1px 0   #F67828,
+		-2px  1px 0   #F67828,
+		 2px  1px 0   #F67828,
+		-2px -2px 0   #F67828,
+		 2px -2px 0   #F67828,
+		-2px  2px 0   #F67828,
+		 2px  2px 0   #F67828,
+		-2px -2px 0   #F67828,
+		 2px -2px 0   #F67828,
+		-2px  2px 0   #F67828,
+		 2px  2px 0   #F67828;
 }
+
 .services-cart-text-area {
 	text-align: left;
+	margin-left: 38px;
 }
 .services-cart-title {
 	font-family: 'Lato';
@@ -324,5 +382,219 @@ html
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 22px;
+	margin-bottom: 21px;
+}
 
+.services-cart-subtitle {
+	font-size: 13px;
+	color: #7b7b7b;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: .3px;
+}
+
+/******************About Us*****************/
+
+#about-us {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.about-us-bg-area {
+	width: 50%;
+	height: 100vh;
+	background-color: #e7edf3;
+}
+.about-us-text-area {
+	width: 50%;
+	height: 100vh;
+	background:linear-gradient(to bottom, #ffc155 99.9%, #e7edf3 .3%);
+	padding-left: 75px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about-us-title {
+	font-family: "Gotham Pro";
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.about-us-subtitle {
+	line-height: 22px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.about-us-btn {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-family: "Lato";
+	text-transform: uppercase;
+	color: #fff;
+	width: 145px;
+	padding: 10px 30px;
+	border: 1px solid #e7ad48;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+/******************price********************/
+
+#price {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #e7edf3;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 135px 0 165px 0;
+}
+.price-title {
+	font-family: "Gotham Pro";
+	font-size: 30px;
+	color: #394b50;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.price-subtitle {
+	font-family: "Lato";
+	font-size: 18px;
+	font-weight: 400;
+	color: #75888d;
+	text-transform: none;
+	margin-bottom: 50px;
+}
+.price-card-area {
+	height: 500px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/***********Card*********/
+.wrap-price {
+	position: relative;
+}
+.price-plan-card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	/*position: relative;*/
+	top: 20px;
+	z-index: 0;
+	height: 440px;
+	width: 390px;
+	padding:0 30px;
+	text-align: center;
+	border: 1px solid #ccd5df;
+	background-color: #fff;
+}
+.price-plan-card:hover {
+	z-index: 1;
+	color: #fff;
+	width: 395px;
+	height: 500px;
+	background-color: #709dca;
+	border: none;
+	border-radius:5px;
+	/*bottom: 30px;*/
+}
+.price-plan-card:hover p {
+	color: #fff;
+}
+.price-plan-card-title {
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+.price-plan-card-money {
+	color: #ffbb42;
+	font-family: "Lato";
+	font-weight: 700;
+	font-size: 60px;
+	margin-bottom: 7px;
+}
+.price-plan-card-money sup {
+	font-size: 40px;
+	vertical-align: top;
+}
+.price-plan-card-date {
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 20px;
+	color: #818b95;
+	margin-bottom: 30px;
+}
+.price-plan-card-account {
+	color: #b5bbc1;
+	padding:15px 0;
+	border-top: 1px solid #b5bbc1;
+	border-bottom :1px solid #b5bbc1;
+}
+.price-plan-card-support {
+	padding: 15px 0;
+	color: #b5bbc1;
+	border-bottom: 1px solid #b5bbc1;
+	margin-bottom: 15px;
+}
+.price-plan-card-cloud {
+	color: #b5bbc1;
+	margin-bottom: 35px;
+}
+.price-plan-card-btn {
+	width: 130px;
+	padding: 14px 20px;
+	background-color: #ffbb42;
+	border: none;
+	border-radius: 2px;
+	color:#fff;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+/*********Work*************/
+
+#work {
+	text-align: center;
+	padding-top: 150px;
+}
+.work-title {
+	
 }
