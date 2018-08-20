@@ -402,17 +402,21 @@ html
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	height: 710px;
 }
 .about-us-bg-area {
 	width: 50%;
-	height: 100vh;
-	background-color: #e7edf3;
+	height: 710px;
+	background-image: url(../img/about-bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .about-us-text-area {
 	width: 50%;
-	height: 100vh;
-	background:linear-gradient(to bottom, #ffc155 99.9%, #e7edf3 .3%);
+	height: 100%;
+	background-color: #ffc155;
 	padding-left: 75px;
+	border: none;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -495,8 +499,14 @@ html
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+}
+.price-card-area:nth-child(1){
+	margin-left: auto;
+}
+.price-card-area:nth-child(3){
+	margin-right: auto;
 }
 
 /***********Card*********/
