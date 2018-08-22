@@ -95,7 +95,11 @@ html
     font-size: 13px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+}
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
@@ -107,10 +111,14 @@ html
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
+	display: flex;	
+}
+.header-logo {
+	margin-left: auto;
 }
 .header-nav {
+	margin-left: 313px;
+	margin-right: auto;
 	line-height: 50px;
 }
 .header-nav-menu-item {
@@ -162,7 +170,7 @@ html
 	padding: 15px;
 	border-radius: 2px;
 	color: #6e6e6e;
-	width: 281px;
+	width: 241px;
 	margin-right: 10px;
 }
 
@@ -187,8 +195,9 @@ html
 	border-radius: 2px;
 	outline: none;
 	border: none;
-	padding: 14px;
 	width: 211px;
+	height: 48px;
+	padding: 2px;
 	cursor: pointer;
 }
 
@@ -306,6 +315,7 @@ html
 	display: flex;
 	justify-content: space-between;
 	text-align: left;
+	max-width: 525px;
 	/*margin-bottom: 125px;*/
 }
 .services-cart-logo {
@@ -672,23 +682,18 @@ html
 	font-weight: 400;
 	margin-bottom: 58px;
 }
-.left-block {
-	margin-left: auto;
-}
-.right-block {
-	margin-right: auto;
-}
+
 .clients-area {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 .clients-card {
 	padding: 43px 30px;
-	width: 567px;
+	max-width: 567px;
 	background-color: #fff;
 	border-radius: 2px;
 	display: -webkit-flex;
@@ -706,6 +711,31 @@ html
 	color: #7b7b7b;
 	line-height: 22px;
 	margin-bottom: 30px;
+	margin-left: 15px;
+}
+.clients-card-about {
+	position: relative;
+}
+.clients-card-text:before {
+	content: "\201C";
+	display: inline-block;
+	position: absolute;
+	left: -6px;
+	font-size: 30px;
+	font-family: "Brandon Grotesque";
+	font-weight: 700;
+	color: #7b7b7b;
+}
+.clients-card-text:after {
+	content: "\201C";
+	display: inline-block;
+	position: absolute;
+	bottom: 35px;
+	transform: rotateY(180deg);
+	font-size: 30px;
+	font-family: "Brandon Grotesque";
+	font-weight: 700;
+	color: #7b7b7b;
 }
 .clients-card-name {
 	text-transform: uppercase;
@@ -715,6 +745,25 @@ html
 }
 .clients-card-name span {
 	color: #f6772c;
+}
+
+/***************Contacts*************/
+#contacts {
+	text-align: center;
+	padding: 150px 0;	
+}
+.contacts-title {
+	font-family: "Gotham Pro";
+	text-transform: uppercase;
+	color: #394b50;
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+.contacts-subtitle {
+	font-size: 16px;
+	color: #394b50;
+	font-weight: 300;
 }
 
 
