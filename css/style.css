@@ -305,6 +305,7 @@ html
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	text-align: left;
 	/*margin-bottom: 125px;*/
 }
 .services-cart-logo {
@@ -314,61 +315,14 @@ html
 	font-size: 50px; 
 	font-weight: 400;
 	line-height: 22px;
-	color: #fff;
-	text-shadow: 
-		-0   -2px 0   #79A4CE,
-		 0   -2px 0   #79A4CE,
-		-0    2px 0   #79A4CE,
-		 0    2px 0   #79A4CE,
-		-2px -0   0   #79A4CE,
-		 2px -0   0   #79A4CE,
-		-2px  0   0   #79A4CE,
-		 2px  0   0   #79A4CE,
-		-1px -2px 0   #79A4CE,
-		 1px -2px 0   #79A4CE,
-		-1px  2px 0   #79A4CE,
-		 1px  2px 0   #79A4CE,
-		-2px -1px 0   #79A4CE,
-		 2px -1px 0   #79A4CE,
-		-2px  1px 0   #79A4CE,
-		 2px  1px 0   #79A4CE,
-		-2px -2px 0   #79A4CE,
-		 2px -2px 0   #79A4CE,
-		-2px  2px 0   #79A4CE,
-		 2px  2px 0   #79A4CE,
-		-2px -2px 0   #79A4CE,
-		 2px -2px 0   #79A4CE,
-		-2px  2px 0   #79A4CE,
-		 2px  2px 0   #79A4CE;
+	color:  transparent;
+	-webkit-text-stroke: 2px #79A4CE;
+
 }
-.services-cart-logo.clock-icon span {
-	color: #fff;
+.services-cart-logo span:hover {
+	color:  transparent;
 	font-size: 50px;
-	text-shadow: 
-		-0   -2px 0   #F67828,
-		 0   -2px 0   #F67828,
-		-0    2px 0   #F67828,
-		 0    2px 0   #F67828,
-		-2px -0   0   #F67828,
-		 2px -0   0   #F67828,
-		-2px  0   0   #F67828,
-		 2px  0   0   #F67828,
-		-1px -2px 0   #F67828,
-		 1px -2px 0   #F67828,
-		-1px  2px 0   #F67828,
-		 1px  2px 0   #F67828,
-		-2px -1px 0   #F67828,
-		 2px -1px 0   #F67828,
-		-2px  1px 0   #F67828,
-		 2px  1px 0   #F67828,
-		-2px -2px 0   #F67828,
-		 2px -2px 0   #F67828,
-		-2px  2px 0   #F67828,
-		 2px  2px 0   #F67828,
-		-2px -2px 0   #F67828,
-		 2px -2px 0   #F67828,
-		-2px  2px 0   #F67828,
-		 2px  2px 0   #F67828;
+	-webkit-text-stroke: 2px  #F67828;
 }
 
 .services-cart-text-area {
@@ -502,13 +456,13 @@ html
 	justify-content: center;
 	align-items: center;
 }
-.price-card-area:nth-child(1){
+/*.price-card-area:nth-child(1){
 	margin-left: auto;
 }
 .price-card-area:nth-child(3){
 	margin-right: auto;
 }
-
+*/
 /***********Card*********/
 .wrap-price {
 	position: relative;
@@ -529,7 +483,7 @@ html
 	top: 20px;
 	z-index: 0;
 	height: 440px;
-	width: 390px;
+	width: 395px;
 	padding:0 30px;
 	text-align: center;
 	border: 1px solid #ccd5df;
@@ -606,5 +560,161 @@ html
 	padding-top: 150px;
 }
 .work-title {
-	
+	font-family: "Gotham Pro";
+	font-size: 30px;
+	font-weight: 900;
+	color: #394b50;
+	text-transform: uppercase;
+	margin-bottom: 5px;
 }
+.work-subtitle {
+	font-family: "Lato";
+	font-weight: 300;
+	color: #394b50;
+	margin-bottom: 78px;
+}
+.arrow-area {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.step-arrow:nth-child(odd){
+	transform: rotate(180deg);
+}
+.step-arrow:nth-child(2){
+	position: relative;
+	top: 140px;
+	margin: 0px 180px;
+}
+.step-area {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.work-step-card {
+	text-align: center;
+	width: 213px;
+	margin-right: 87px;
+}
+.work-step-card:nth-child(4) {
+	margin-right: 0;
+}
+.work-step-card-logo {
+	font-size: 72px;
+	color: transparent;
+	-webkit-text-stroke: 2px #76a1cc;
+	margin-bottom: 100px;
+}
+.work-step-card-title {
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 700;
+	color: #394b50;
+	margin-bottom: 28px;
+}
+.work-step-card-text {
+	color: #7b7b7b;
+	line-height: 22px;
+	margin-bottom: 91px;
+}
+.work-btn {
+	margin: 0 auto 150px auto;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Lato';
+	font-size: 14px;
+	border: none;
+	outline: none;
+	height: 46px;
+	width: 165px;
+	background-color: #ffbb42;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+/***********Clients*******/
+
+#clients {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	padding: 140px 0;
+	background-color: #ffc155;
+	justify-content: space-around;
+}
+.clients-title {
+	font-family: 'Gotham Pro';
+	font-size: 30px;
+	color: #fff;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.clients-subtitle {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 58px;
+}
+.left-block {
+	margin-left: auto;
+}
+.right-block {
+	margin-right: auto;
+}
+.clients-area {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+.clients-card {
+	padding: 43px 30px;
+	width: 567px;
+	background-color: #fff;
+	border-radius: 2px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.clients-card-logo {
+	margin-right: 10px;
+}
+.clients-card-text {
+	color: #7b7b7b;
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+.clients-card-name {
+	text-transform: uppercase;
+	font-family: 'Lato';
+	color: #99aaae;
+	font-size: 14px;
+}
+.clients-card-name span {
+	color: #f6772c;
+}
+
+
