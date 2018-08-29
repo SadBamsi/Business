@@ -91,7 +91,7 @@ input {
 
 html
  {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 13px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -144,7 +144,7 @@ body {
     text-align: center;
 }
 .home-title {
-	font-family:"Gotham Pro";
+	font-family:'Gotham Pro';
 	font-weight: 900;
 	font-size: 35px;
 	line-height: 24px;
@@ -179,7 +179,7 @@ body {
 	margin-right: 13px;
 }
 .home-form-input::placeholder {
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 13px;
 	font-weight: 400;
 	color: #a9a9a9;
@@ -188,7 +188,7 @@ body {
 .home-form-btn {
 	background-color: #ffbb42;
 	color: #fff;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -333,6 +333,7 @@ body {
 	color:  transparent;
 	font-size: 50px;
 	-webkit-text-stroke: 2px  #F67828;
+	cursor: pointer;
 }
 
 .services-cart-text-area {
@@ -395,7 +396,7 @@ body {
 }
 
 .about-us-title {
-	font-family: "Gotham Pro";
+	font-family: 'Gotham Pro';
 	font-weight: 700;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -412,7 +413,7 @@ body {
 	background-color: transparent;
 	outline: none;
 	border: none;
-	font-family: "Lato";
+	font-family: 'Lato';
 	text-transform: uppercase;
 	color: #fff;
 	width: 145px;
@@ -442,14 +443,14 @@ body {
 	padding: 135px 0 165px 0;
 }
 .price-title {
-	font-family: "Gotham Pro";
+	font-family: 'Gotham Pro';
 	font-size: 30px;
 	color: #394b50;
 	font-weight: 700;
 	margin-bottom: 5px;
 }
 .price-subtitle {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-size: 18px;
 	font-weight: 400;
 	color: #75888d;
@@ -516,7 +517,7 @@ body {
 	color: #fff;
 }
 .price-plan-card-title {
-	font-family: "Lato";
+	font-family: 'Lato';
 	color: #818b95;
 	font-weight: 300;
 	font-size: 25px;
@@ -524,7 +525,7 @@ body {
 }
 .price-plan-card-money {
 	color: #ffbb42;
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-weight: 700;
 	font-size: 60px;
 	margin-bottom: 7px;
@@ -534,7 +535,7 @@ body {
 	vertical-align: top;
 }
 .price-plan-card-date {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-weight: 300;
 	font-size: 20px;
 	color: #818b95;
@@ -574,7 +575,7 @@ body {
 	padding-top: 150px;
 }
 .work-title {
-	font-family: "Gotham Pro";
+	font-family: 'Gotham Pro';
 	font-size: 30px;
 	font-weight: 900;
 	color: #394b50;
@@ -582,12 +583,12 @@ body {
 	margin-bottom: 5px;
 }
 .work-subtitle {
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-weight: 300;
 	color: #394b50;
 	margin-bottom: 78px;
 }
-.arrow-area {
+/*.arrow-area {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -602,7 +603,7 @@ body {
 	position: relative;
 	top: 140px;
 	margin: 0px 180px;
-}
+}*/
 .step-area {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -612,9 +613,26 @@ body {
 	justify-content: center;
 }
 .work-step-card {
+	position: relative;
 	text-align: center;
 	width: 213px;
 	margin-right: 87px;
+}
+.work-step-card:nth-child(odd):after {
+	content: url(../img/arrow.png);
+	transform: rotate(180deg);
+	position: absolute;
+	right: -120px;
+	top: -20px;
+}
+.work-step-card:nth-child(2):after{
+	content: url(../img/arrow.png);
+	position: absolute;
+	top: 40px;
+	right: -110px;
+}
+.work-step-card:nth-child(4):after{
+	display: none;
 }
 .work-step-card:nth-child(4) {
 	margin-right: 0;
@@ -721,23 +739,23 @@ body {
 	position: relative;
 }
 .clients-card-text:before {
-	content: "\201C";
+	content: '\201C';
 	display: inline-block;
 	position: absolute;
 	left: -6px;
 	font-size: 30px;
-	font-family: "Brandon Grotesque";
+	font-family: 'Brandon Grotesque';
 	font-weight: 700;
 	color: #7b7b7b;
 }
 .clients-card-text:after {
-	content: "\201C";
+	content: '\201C';
 	display: inline-block;
 	position: absolute;
 	bottom: 35px;
 	transform: rotateY(180deg);
 	font-size: 30px;
-	font-family: "Brandon Grotesque";
+	font-family: 'Brandon Grotesque';
 	font-weight: 700;
 	color: #7b7b7b;
 }
@@ -768,7 +786,7 @@ body {
 	padding: 150px 0 70px 0;	
 }
 .contacts-title {
-	font-family: "Gotham Pro";
+	font-family: 'Gotham Pro';
 	text-transform: uppercase;
 	color: #394b50;
 	font-size: 30px;
@@ -797,7 +815,7 @@ body {
 	background-color: #ffbb42;
 	text-transform: uppercase;
 	color: #fff;
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-size: 14px;
 	border: none;
 	outline: none;
@@ -824,7 +842,7 @@ body {
 	padding: 40px 0 57px 0;
 }
 .address-wrap:after {
-	content: "";
+	content: '';
 	display: block;
 	margin: 0 auto;
 	min-width: 1100px;
@@ -856,7 +874,7 @@ body {
 }
 .address-area-title {
 	text-transform: uppercase;
-	font-family: "Lato";
+	font-family: 'Lato';
 	font-size: 15px;
 	margin-bottom: 10px;
 	font-weight: 700;
@@ -905,7 +923,7 @@ footer {
 .phone-number {
 	text-decoration: none;
 	display: block;
-	font-family: "Lato";
+	font-family: 'Lato';
 	color: #394b50;
 	font-size: 22.27px;
 	text-align: center;
